@@ -80,7 +80,7 @@ public class CommandLineArguments {
             } else if (iter.current().equals("--OpponentId") || iter.current().equals("-x")) {
                 iter.moveNext();
                 opponentId = iter.current();
-            } else if (iter.current().equals("--Realtime")) {
+            } else if (iter.current().equals("--RealTime")) {
                 realtime = true;
             } else if (iter.current().equals("--Map")) {
                 iter.moveNext();
@@ -98,7 +98,7 @@ public class CommandLineArguments {
                 System.out.println("\tDifficulty of the built-in AI, if applicable.");
                 System.out.println("--ComputerBuild <Air|Macro|Power|Rush|Timing>");
                 System.out.println("\tBuild that the built-in AI should use, if applicable. If not specified, the game will use a random build.");
-                System.out.println("--Realtime");
+                System.out.println("--RealTime");
                 System.out.println("\tWhether the game should be played in real-time. Otherwise the game will play as fast (or slow) as the bot can handle.");
                 System.out.println("\tReal-time will be more comfortable for humans, but may cause bugs.");
                 System.out.println("--Map <name without extension e.g. Triton LE>");
